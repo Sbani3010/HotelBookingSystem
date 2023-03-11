@@ -1,4 +1,4 @@
-package za.ac.cput;
+package za.ac.cput.domain;
 
 public class User {
     private String firstName;

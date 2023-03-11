@@ -1,7 +1,7 @@
-package za.ac.cput.testUser;
+package za.ac.cput.domain;
 
 import org.junit.Test;
-import za.ac.cput.User;
+import za.ac.cput.domain.User;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotSame;
 
