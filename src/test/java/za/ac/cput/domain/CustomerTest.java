@@ -1,29 +1,29 @@
 package za.ac.cput.domain;
 
-//import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AdminTest {
-    private final Admin admin = new Admin("Sbani", "Sithole","219446564@mycput.ac.za",769690158,"sbnai3010@","sbani30");
+class CustomerTest {
+    private final Customer customer = new Customer("Sbani", "Sithole","219446564@mycput.ac.za",769690158);
 
     @Test
     public void objectEquality() {
-        assertEquals("sbanintokozo12345@", admin.getPassword());
+        assertEquals("Sithole", customer.getLastName());
     }
 
     @Test
     public void objectIdentity() {
 
-        assertSame("sbani3010", admin.getUsername());
+        assertSame("Sbani", customer.getFirstName());
     }
 
     @Test
     public void failingTest() {
-        assertEquals("sbani3010", admin.getPassword());
+        assertEquals("sbani3010", customer.getTelNo());
     }
 
     @Test
@@ -36,6 +36,6 @@ class AdminTest {
     @Disabled("Test Disabled")
     @Test
     public void disabledTest() {
-        assertNotEquals("sbani", admin.getUsername());
+        assertNotEquals("sbani", customer.getEmail());
     }
 }

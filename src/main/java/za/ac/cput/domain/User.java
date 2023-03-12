@@ -8,7 +8,13 @@ public class User {
     private String email;
     private long telNo;
 
-    public User() {
+
+
+    public User(String firstName, String lastName, String email, long telNo) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.telNo = telNo;
     }
 
     public String getFirstName() {
