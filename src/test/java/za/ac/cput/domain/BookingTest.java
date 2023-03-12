@@ -40,6 +40,4 @@ class BookingTest {
     public void disablingTest(){
         Assertions.assertEquals(1,1);
     }
-
-
 }
