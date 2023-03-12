@@ -1,14 +1,14 @@
 package za.ac.cput.domain;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.*;
 
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class AdminTest {
-    private Admin admin = new Admin("sbanintokozo12345@", "sbani3010");
+    private final Admin admin = new Admin("sbanintokozo12345@", "sbani3010");
 
     @Test
     public void objectEquality() {
@@ -33,7 +33,7 @@ class AdminTest {
         });
     }
 
-    @Disabled("Disabled")
+    @Disabled("Test Disabled")
     @Test
     public void disabledTest() {
         assertNotEquals("sbani", admin.getUsername());
