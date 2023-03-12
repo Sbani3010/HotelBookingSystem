@@ -7,14 +7,14 @@ import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.*;
 class RoomTest {
     Room rms= new Room(67,"single",true);
-    @Disabled("Disabled until CustomerService is up!")
+    @Disabled("Disabled!")
     @Test
      public void test_fail(){
          Room rms= new Room(67,"single",true);
          System.out.println(rms.toString());
          assertNotNull(rms);
      }
-    @Disabled("Disabled until CustomerService is up!")
+    @Disabled("Disabled!")
     @Test
     public void objectEquality() {
 
@@ -39,9 +39,6 @@ class RoomTest {
     }
 
 
-
-
-     
 
 
 }

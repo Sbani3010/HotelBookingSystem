@@ -7,4 +7,5 @@ public class Main {
        Room rms= new Room(67,"single",true);
         System.out.println(rms.toString());
     }
+
 }
